@@ -43,3 +43,15 @@ train_movement: Trains can move from one location to another through the railway
 - 60cd4df train_movement: Train class with path finding, signal checking, and movement
 
 Tests (python3 -m pytest -q): pass, 38 passed in 0.03s.
+
+## signalling: station_management
+
+*Finished 2026-11-20 19:05 after 10 turns and 1 commit; started 2026-11-20 17:55.*
+
+Station management: Station class with platforms, tracks, and ability for trains to stop
+
+station_management: Enhanced Station class with platform management. Added arrive(), depart(), can_arrive(), get_train_on_platform() methods. Platforms are tracked and a station can only accept trains when it has available platforms. Tests cover basic arrival, full station, departure, error cases, and automatic platform assignment. All 22 track tests pass, 46 total tests pass.
+
+- 2771f8d station_management: Enhanced Station class with platform management (arrive, depart, can_arrive)
+
+Tests (python3 -m pytest -q): pass, 46 passed in 0.03s.
