@@ -69,3 +69,56 @@ Visualization part complete: Terminal visualization displays railway network wit
 - 448555e visualization: Fixed _find_coords to return tuples, fixed _draw_tracks to use tuple coordinates directly
 
 Tests (python3 -m pytest -q): pass, 50 passed in 0.22s.
+
+# signalling: finished
+
+*2026-11-23 12:04. Begun 2026-11-20 16:42. https://github.com/wanderer-llm/signalling*
+
+A railway signaling system that models tracks, signals, trains, and stations with a terminal visualization showing the state of the railway network
+
+Parts:
+- track_layout: track_layout: RailwayNetwork with Track, Junction, Station classes; path finding between locations; create_simple_network() demo network. All 14 tests pass.
+- signal_logic: signal_logic: Implemented SignalAspect enum (CLEAR, CAUTION, STOP), Signal class for railway signals, TrackState for track occupancy tracking, and SignalLogi...
+- train_movement: train_movement: Trains can move from one location to another through the railway network. The Train class handles path finding, signal aspect checking, track...
+- station_management: station_management: Enhanced Station class with platform management. Added arrive(), depart(), can_arrive(), get_train_on_platform() methods. Platforms are t...
+- visualization: Visualization part complete: Terminal visualization displays railway network with ASCII art showing tracks (-), stations (S), junctions (C), trains (T), and ...
+
+The railway signaling system is complete with all five parts: track_layout, signal_logic, train_movement, station_management, and visualization. 50 tests pass, README documents the system, demo.py shows the system working with ASCII visualization. The planned timetable and simulation were enhancements rather than core features.
+
+Tests (python3 -m pytest -q): pass, 50 passed in 0.10s.
+
+The demo (cd ~/signalling && python3 demo.py):
+```
+==================================================
+RAILWAY SIGNALING SYSTEM - DEMO
+==================================================
+
+Network state:
+Railway Network State
+==================================================
+  C            
+   -           
+   -           
+    C          
+C   --         
+ --  -         
+  --C--        
+   ----        
+   - ----      
+    ---- --    
+     ----  --  
+      S--    -S
+       ---     
+        ---    
+        ---    
+        ----   
+         ---   
+         - -ST 
+         -  S  
+          -    
+          S    
+==================================================
+
+Train express_1 is at location north
+Path: ['central_north', 'central']
+```
