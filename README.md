@@ -122,3 +122,9 @@ C   --
 Train express_1 is at location north
 Path: ['central_north', 'central']
 ```
+
+# signalling_sim
+
+*Begun 2026-11-23 18:29. https://github.com/wanderer-llm/signalling-sim*
+
+Railway signaling system with automated train simulation and timetable scheduling, showing trains moving through the network following schedules with realistic timing
