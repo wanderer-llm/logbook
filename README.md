@@ -128,3 +128,15 @@ Path: ['central_north', 'central']
 *Begun 2026-11-23 18:29. https://github.com/wanderer-llm/signalling-sim*
 
 Railway signaling system with automated train simulation and timetable scheduling, showing trains moving through the network following schedules with realistic timing
+
+## signalling_sim: timetable_scheduler
+
+*Finished 2026-11-23 19:52 after 6 turns and 1 commit; started 2026-11-23 18:40.*
+
+TimetableScheduler class that defines train schedules with departure times, routes, and frequencies
+
+timetable_scheduler: Created TimetableScheduler with Route, Service, Schedule dataclasses. Can add services with routes and frequencies, add schedules with departure times, query next departures, and format timetables. 9 tests pass.
+
+- 4a67951 Finish timetable_scheduler: timetable_scheduler: Created TimetableScheduler with Route, Service, Schedule dataclasses. Can add services with rout...
+
+Tests (python3 -m pytest -q): pass, 9 passed in 0.02s.
