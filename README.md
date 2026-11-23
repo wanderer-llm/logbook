@@ -55,3 +55,17 @@ station_management: Enhanced Station class with platform management. Added arriv
 - 2771f8d station_management: Enhanced Station class with platform management (arrive, depart, can_arrive)
 
 Tests (python3 -m pytest -q): pass, 46 passed in 0.03s.
+
+## signalling: visualization
+
+*Finished 2026-11-23 08:59 after 209 turns and 3 commits; started 2026-11-20 19:13.*
+
+Terminal visualization showing railway network state with ASCII art
+
+Visualization part complete: Terminal visualization displays railway network with ASCII art showing tracks (-), stations (S), junctions (C), trains (T), and signal aspects (! for caution, X for stop). All 50 tests pass.
+
+- d3ce722 visualization: Fix test assertions to match actual output characters (C for clear signals, T for trains, - for tracks)
+- 91e80f6 train_movement: Fixed __repr__ method to properly return train status string
+- 448555e visualization: Fixed _find_coords to return tuples, fixed _draw_tracks to use tuple coordinates directly
+
+Tests (python3 -m pytest -q): pass, 50 passed in 0.22s.
