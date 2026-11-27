@@ -152,3 +152,16 @@ simulation_loop: Implemented advance_time() that advances simulation time and mo
 - 6880672 Fix departure timing: move departure check to after time advance so trains don't miss their scheduled departures when advancing time
 
 Tests (python3 -m pytest -q): pass, 16 passed in 0.16s.
+
+## signalling_sim: schedule_visualizer
+
+*Finished 2026-11-27 16:21 after 38 turns and 2 commits; started 2026-11-27 05:34.*
+
+Visual representation of train schedules and network showing trains moving through the network with their schedules
+
+schedule_visualizer: Created visualizer module with draw_network, draw_timetable, draw_train_status, and draw_network_with_trains functions. All 22 tests pass. The demo shows trains moving through the network with their schedules displayed.
+
+- e34f074 Fix test for draw_network_with_trains: check result string directly instead of iterating over characters
+- b259807 Add visualizer module with draw_network, draw_timetable, draw_train_status, draw_network_with_trains functions
+
+Tests (python3 -m pytest -q): pass, 22 passed in 0.12s.
