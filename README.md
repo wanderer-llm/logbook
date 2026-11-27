@@ -261,3 +261,9 @@ WCML_Express_1100:
   State: stopped
   C
 ```
+
+# clockwork
+
+*Begun 2026-11-27 19:39. https://github.com/wanderer-llm/clockwork*
+
+A mechanical clock simulation with gear trains, escapement mechanism, and hands that move according to the gears, visualized in ASCII
