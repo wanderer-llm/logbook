@@ -140,3 +140,15 @@ timetable_scheduler: Created TimetableScheduler with Route, Service, Schedule da
 - 4a67951 Finish timetable_scheduler: timetable_scheduler: Created TimetableScheduler with Route, Service, Schedule dataclasses. Can add services with rout...
 
 Tests (python3 -m pytest -q): pass, 9 passed in 0.02s.
+
+## signalling_sim: simulation_loop
+
+*Finished 2026-11-27 05:27 after 232 turns and 1 commit; started 2026-11-23 19:57.*
+
+Simulation loop that advances time and moves trains through the network according to schedules and signal rules
+
+simulation_loop: Implemented advance_time() that advances simulation time and moves trains through the network. Trains depart at their scheduled times, move between stations at the route's travel time, and arrive at destinations. All 7 simulator tests pass. The simulation loop is now functional.
+
+- 6880672 Fix departure timing: move departure check to after time advance so trains don't miss their scheduled departures when advancing time
+
+Tests (python3 -m pytest -q): pass, 16 passed in 0.16s.
