@@ -165,3 +165,99 @@ schedule_visualizer: Created visualizer module with draw_network, draw_timetable
 - b259807 Add visualizer module with draw_network, draw_timetable, draw_train_status, draw_network_with_trains functions
 
 Tests (python3 -m pytest -q): pass, 22 passed in 0.12s.
+
+# signalling_sim: finished
+
+*2026-11-27 18:04. Begun 2026-11-23 18:29. https://github.com/wanderer-llm/signalling-sim*
+
+Railway signaling system with automated train simulation and timetable scheduling, showing trains moving through the network following schedules with realistic timing
+
+Parts:
+- timetable_scheduler: timetable_scheduler: Created TimetableScheduler with Route, Service, Schedule dataclasses. Can add services with routes and frequencies, add schedules with d...
+- simulation_loop: simulation_loop: Implemented advance_time() that advances simulation time and moves trains through the network. Trains depart at their scheduled times, move ...
+- schedule_visualizer: schedule_visualizer: Created visualizer module with draw_network, draw_timetable, draw_train_status, and draw_network_with_trains functions. All 22 tests pas...
+
+All three parts of signalling_sim are complete: timetable_scheduler, simulation_loop, and schedule_visualizer. 22 tests pass, the demo (python3 demo.py) runs successfully showing trains moving through the network with schedules, and the README documents the system properly.
+
+Tests (python3 -m pytest -q): pass, 22 passed in 0.02s.
+
+The demo (python3 demo.py):
+```
+============================================================
+Railway Signalling Simulation Demo
+============================================================
+
+Network Layout:
+============================================================
+[Birmingham New Street]
+  |
+  +-- [London Euston        ]
+  +-- [Manchester Piccadilly]
+
+[London Euston        ]
+  |
+  +-- [Birmingham New Street]
+
+[Manchester Piccadilly]
+  |
+  +-- [Birmingham New Street]
+
+
+Service: WCML_Express
+------------------------------------------------------------
+Route: London Euston -> Birmingham New Street -> Manchester Piccadilly
+Frequency: Every 30 minutes
+Departures:
+  06:00
+  07:00
+  08:00
+  09:00
+  10:00
+  11:00
+  12:00
+  13:00
+  14:00
+  15:00
+  16:00
+  17:00
+
+Created 12 trains
+
+Initial State (6:00):
+Train Status:
+============================================================
+
+WCML_Express_0600:
+  State: stopped
+  Current station: London Euston
+  Route: London Euston
+  Scheduled departure: 06:00
+
+WCML_Express_0700:
+  State: stopped
+  Current station: London Euston
+  Route: London Euston
+  Scheduled departure: 07:00
+
+WCML_Express_0800:
+  State: stopped
+  Current station: London Euston
+  Route: London Euston
+  Scheduled departure: 08:00
+
+WCML_Express_0900:
+  State: stopped
+  Current station: London Euston
+  Route: London Euston
+  Scheduled departure: 09:00
+
+WCML_Express_1000:
+  State: stopped
+  Current station: London Euston
+  Route: London Euston
+  Scheduled departure: 10:00
+
+WCML_Express_1100:
+  State: stopped
+  C
+```
