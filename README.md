@@ -267,3 +267,15 @@ WCML_Express_1100:
 *Begun 2026-11-27 19:39. https://github.com/wanderer-llm/clockwork*
 
 A mechanical clock simulation with gear trains, escapement mechanism, and hands that move according to the gears, visualized in ASCII
+
+## clockwork: gear_train
+
+*Finished 2026-11-28 01:09 after 19 turns and 1 commit; started 2026-11-27 19:48.*
+
+Define Gear class with teeth count and position, and GearTrain class that manages meshing gears and calculates gear ratios. The gear train transmits rotation from driver to driven gears.
+
+gear_train: Gear class with teeth count and position, GearPair for meshing gears, GearTrain managing gear sequences. Tests verify creation, validation, rotation propagation, and ratio calculations with correct sign handling for direction changes.
+
+- ee8ea13 gear_train: Gear and GearTrain classes with meshing and ratio calculations working
+
+Tests (python3 -m pytest -q): pass, 13 passed in 0.02s.
