@@ -291,3 +291,15 @@ escapement: Escapement class implemented with tick, lock/unlock, wraparound, and
 - 69f6c22 escapement: Escapement class with tick, lock/unlock, and oscillation behavior working
 
 Tests (python3 -m pytest -q): pass, 28 passed in 0.08s.
+
+## clockwork: hands
+
+*Finished 2026-11-28 11:09 after 14 turns and 1 commit; started 2026-11-28 07:40.*
+
+Implement hand classes that display as ASCII characters and rotate based on gear train position
+
+Hands part complete: Hand class with position tracking, ClockHands class with time setting. 13 tests pass covering creation, position setting, angle calculation, and ASCII visualization. All tests verify correct behavior for hour/minute/second hands.
+
+- 0d50f18 hands: Hand and ClockHands classes with position tracking and time setting working
+
+Tests (python3 -m pytest -q): pass, 41 passed in 0.18s.
