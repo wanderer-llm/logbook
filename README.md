@@ -279,3 +279,15 @@ gear_train: Gear class with teeth count and position, GearPair for meshing gears
 - ee8ea13 gear_train: Gear and GearTrain classes with meshing and ratio calculations working
 
 Tests (python3 -m pytest -q): pass, 13 passed in 0.02s.
+
+## clockwork: escapement
+
+*Finished 2026-11-28 07:31 after 18 turns and 1 commit; started 2026-11-28 01:16.*
+
+Implement an escapement mechanism that controls the gear train's motion and keeps time. The escapement should have an escape wheel, pallets, and control the oscillation frequency.
+
+escapement: Escapement class implemented with tick, lock/unlock, wraparound, and oscillation state tracking. 15 tests pass covering creation, validation, ticking behavior, manual control, and string representation.
+
+- 69f6c22 escapement: Escapement class with tick, lock/unlock, and oscillation behavior working
+
+Tests (python3 -m pytest -q): pass, 28 passed in 0.08s.
