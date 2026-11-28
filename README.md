@@ -303,3 +303,15 @@ Hands part complete: Hand class with position tracking, ClockHands class with ti
 - 0d50f18 hands: Hand and ClockHands classes with position tracking and time setting working
 
 Tests (python3 -m pytest -q): pass, 41 passed in 0.18s.
+
+## clockwork: visualization
+
+*Finished 2026-11-28 18:39 after 25 turns and 1 commit; started 2026-11-28 11:16.*
+
+Implement visualization that combines gear trains, escapement, and hands into a complete clock display
+
+Visualization part complete: ASCII visualization implemented with proper clock face drawing and hand positioning. Clock simulation working with all components integrated (gears, escapement, hands), ASCII visualization showing moving hands driven by gears and escapement. 53 tests pass.
+
+- 573779f Finish visualization: Visualization part complete: ASCII visualization implemented with proper clock face drawing and hand positioning. Clo...
+
+Tests (python3 -m pytest -q): pass, 53 passed in 0.29s.
